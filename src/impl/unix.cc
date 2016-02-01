@@ -4,6 +4,7 @@
  */
 
 #if !defined(_WIN32)
+#ifdef SERIAL_ENABLED
 
 #include <stdio.h>
 #include <string.h>
@@ -1055,4 +1056,6 @@ Serial::SerialImpl::writeUnlock ()
   }
 }
 
+#endif // SERIAL_ENALBED
 #endif // !defined(_WIN32)
+
